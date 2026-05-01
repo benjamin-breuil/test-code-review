@@ -1,4 +1,5 @@
 const password = "admin123";
+const db = require('./db');
 
 function getUser(id) {
   const query = "SELECT * FROM users WHERE id = " + id;
@@ -10,4 +11,11 @@ function processData(data) {
     console.log(data[i].name);
   }
 }
-// test
+
+function login(user, pass) {
+  if (pass == password) {
+    return true;
+  }
+}
+
+var unusedVariable = "je sers a rien";
