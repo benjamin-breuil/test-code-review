@@ -10,3 +10,4 @@ function processData(data) {
     console.log(data[i].name);
   }
 }
+// test
